@@ -8,3 +8,12 @@ light_weight:
   permalink: /light_weight
   description: Lightweight tag description
 
+instance_segmentation:
+  label: Instance Segmentation
+  permalink: /instance_segmentation
+  description: Instance Segmentation tag description
+
+transformer:
+  label: Transformer
+  permalink: /transformer
+  description: Transformer tag description
