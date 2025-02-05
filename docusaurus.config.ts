@@ -8,8 +8,8 @@ import rehypeKatex from 'rehype-katex';
 
 const config: Config = {
   title: 'Tianliang\'s Blog',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  tagline: 'Sharing thoughts on technology, programming, and life.',
+  favicon: 'img/octopus.png',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
@@ -77,7 +77,7 @@ const config: Config = {
       title: 'Tianliang\'s Blog',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/octopus.png',
       },
       items: [
         {

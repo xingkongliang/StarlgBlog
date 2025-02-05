@@ -1,43 +1,31 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import React from 'react';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
+import Link from '@docusaurus/Link';
 
-import styles from './index.module.css';
-
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+export default function Home() {
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
+    <Layout title="Home" description="Welcome to My Blog">
+      <main className="container">
+        <div style={{ textAlign: 'center', padding: '50px 20px' }}>
+          <h1>Welcome to My Personal Blog</h1>
+          <p style={{ fontSize: '18px', color: '#666' }}>
+            Sharing thoughts on technology, programming, and life.
+          </p>
+          <div style={{ marginTop: '30px' }}>
+            <Link className="button button--primary button--lg" to="/blog">
+              Read My Blog
+            </Link>
+            <a href="/TianliangZhang" target="_blank" rel="noopener noreferrer" className="button button--secondary button--lg" style={{ marginLeft: '15px' }}>
+              About Me
+            </a>
+
+          </div>
+          <div style={{ marginTop: '40px' }}>
+            <a href="https://github.com/xingkongliang" target="_blank" className="button button--link">GitHub</a>
+            <a href="https://www.linkedin.com/in/zhangtianliang" target="_blank" className="button button--link" style={{ marginLeft: '10px' }}>LinkedIn</a>
+            <a href="mailto:tianliangjay@gmail.com" className="button button--link" style={{ marginLeft: '10px' }}>Email</a>
+          </div>
         </div>
-      </div>
-    </header>
-  );
-}
-
-export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
       </main>
     </Layout>
   );
