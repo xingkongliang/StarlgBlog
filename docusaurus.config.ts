@@ -66,19 +66,11 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
-      } satisfies Preset.Options,
-      '@docusaurus/preset-classic',
-      {
         gtag: {
           trackingID: 'G-D1KPNE51RS',
           anonymizeIP: true,
         },
-      },
-      'vercel-analytics',
-      {
-        debug: true,
-        mode: 'auto',
-      },
+      } satisfies Preset.Options,
     ],
   ],
 
@@ -170,6 +162,15 @@ const config: Config = {
         'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
       crossorigin: 'anonymous',
     },
+  ],
+  plugins: [
+    [
+      'vercel-analytics',
+      {
+        debug: true,
+        mode: 'auto',
+      },
+    ],
   ],
 };
 
