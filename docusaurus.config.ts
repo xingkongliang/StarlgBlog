@@ -67,6 +67,18 @@ const config: Config = {
           customCss: './src/css/custom.css',
         },
       } satisfies Preset.Options,
+      '@docusaurus/preset-classic',
+      {
+        gtag: {
+          trackingID: 'G-D1KPNE51RS',
+          anonymizeIP: true,
+        },
+      },
+      'vercel-analytics',
+      {
+        debug: true,
+        mode: 'auto',
+      },
     ],
   ],
 
