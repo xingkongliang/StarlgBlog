@@ -48,28 +48,34 @@ sidebar_position: 0
 深入理解 Python 语言特性，提高编程能力。
 
 ### **学习内容**：
-1. **面向对象编程（OOP）**
+
+1. **数据结构与算法**
+   - collections 模块（Counter，deque，defaultdict）
+   - 时间复杂度 (Big O 记法)
+   - 常见算法（排序、搜索、动态规划）
+
+2. **面向对象编程（OOP）**
    - 类与对象 (`class`, `self`)
    - `__init__` 构造函数，`__str__`，`__repr__`
    - 继承、多态、封装
    - 类方法 (`@classmethod`) 和静态方法 (`@staticmethod`)
    - 运算符重载 (`__add__`, `__eq__`)
 
-2. **迭代器与生成器**
+3. **迭代器与生成器**
    - `iter()` 与 `next()`
    - `yield` 关键字
    - `itertools` 模块
 
-3. **装饰器**
+4. **装饰器**
    - `@property`
    - `@staticmethod`, `@classmethod`
    - 自定义装饰器
 
-4. **正则表达式**
+5. **正则表达式**
    - `re` 模块
    - 常见正则匹配语法
 
-5. **多线程与多进程**
+6. **多线程与多进程**
    - `threading` 和 `multiprocessing`
    - GIL（全局解释器锁）机制
 
