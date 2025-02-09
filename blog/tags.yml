@@ -1,3 +1,8 @@
+tool:
+  label: Tool
+  permalink: /tool
+  description: Tool tag description
+  
 object_detection:
   label: Object Detection
   permalink: /object_detection
