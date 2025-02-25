@@ -16,6 +16,7 @@ pip install fava
 
 Fava 是复式簿记软件 Beancount 的 Web 界面，侧重于功能和可用性，使用非常友好。
 
+<!-- truncate -->
 
 我们可以先使用 `bean-exampl` 生成一个 `Beancount` 文件，文件的后缀名可以自己定义，一般用`.bean`或`.beancount`：
 
