@@ -22,3 +22,13 @@ transformer:
   label: Transformer
   permalink: /transformer
   description: Transformer tag description
+
+hardware:
+  label: Hardware
+  permalink: /hardware
+  description: Hardware tag description
+
+ai:
+  label: AI
+  permalink: /ai
+  description: AI tag description

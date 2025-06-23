@@ -2,7 +2,7 @@
 slug: EchoLink-Mini
 title: EchoLink Mini
 authors: [jay]
-tags: [hardware, ESP32]
+tags: [hardware]
 ---
 
 # Project Name: **EchoLink Mini**
