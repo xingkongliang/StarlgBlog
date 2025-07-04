@@ -21,7 +21,7 @@ Claude Code 挂钩是用户定义的 shell 命令，在 Claude Code生命周期�
 通过将这些规则编码为挂钩而不是提示说明，您可以将建议转化为在每次预期运行时都会执行的应用程序级代码。
 
 > **警告：**
-> 挂钩在未经确认的情况下以您的完全用户权限执行 shell 命令。您有责任确保您的挂钩是安全可靠的。Anthropic 对因使用挂钩而导致的任何数据丢失或系统损坏概不负责。请查看[安全注意事项](#security-considerations)。
+> 挂钩在未经确认的情况下以您的完全用户权限执行 shell 命令。您有责��确保您的挂钩是安全可靠的。Anthropic 对因使用挂钩而导致的任何数据丢失或系统损坏概不负责。请查看[安全注意事项](#安全注意事项)。
 
 ## 快速入门
 
@@ -31,7 +31,7 @@ Claude Code 挂钩是用户定义的 shell 命令，在 Claude Code生命周期�
 
 ### 第 1 步：打开挂钩配置
 
-运行 `/hooks` [斜杠命令](/en/docs/claude-code/slash-commands)并选择 `PreToolUse` 挂钩事件。
+运行 `/hooks` [斜杠命令](./slash-commands.md)并选择 `PreToolUse` 挂钩事件。
 
 `PreToolUse` 挂钩在工具调用之前运行，可以阻止它们，同时向 Claude 提供有关如何进行不同操作的反馈。
 
@@ -77,7 +77,7 @@ jq -r '"\(.tool_input.command) - \(.tool_input.description // "No description")"
 
 ## 配置
 
-Claude Code 挂钩在您的[设置文件](/en/docs/claude-code/settings)中配置：
+Claude Code 挂钩在您的[设置文件](./settings.md)中配置：
 
 *   `~/.claude/settings.json` - 用户设置
 *   `.claude/settings.json` - 项目设置
@@ -260,7 +260,7 @@ Claude Code 挂钩在您的[设置文件](/en/docs/claude-code/settings)中配�
 ```json
 {
   "continue": true, // Claude 是否应在挂钩执行后继续（默认为 true）
-  "stopReason": "string" // 当 continue 为 false 时显示的消息
+  "stopReason": "string" // 当 continue 为 false 时显示的消���
   "suppressOutput": true, // 从脚本模式隐藏 stdout（默认为 false）
 }
 ```
@@ -371,7 +371,7 @@ if issues:
 
 ## 使用 MCP 工具
 
-Claude Code 挂钩与[模型上下文协议 (MCP) 工具](/en/docs/claude-code/mcp)无缝协作。当 MCP 服务器提供工具时，它们会以特殊的命名模式出现，您可以在挂钩中匹配该模式。
+Claude Code 挂钩与[模型上下文协议 (MCP) 工具](./mcp.md)无缝协作。当 MCP 服务器提供工具时，它们会以特殊的命名模式出现，您可以在挂钩中匹配该模式。
 
 ### MCP 工具命名
 
@@ -509,7 +509,7 @@ MCP 工具遵循 `mcp__<server>__<tool>` 的模式，例如：
 要对挂钩进行故障排除：
 
 1.  检查 `/hooks` 菜单是否显示您的配置
-2.  验证您的[设置文件](/en/docs/claude-code/settings)是否为有效的 JSON
+2.  验证您的[设置文件](./settings.md)是否为有效的 JSON
 3.  手动测试命令
 4.  检查退出代码
 5.  审查 stdout 和 stderr 格式期望

@@ -24,7 +24,7 @@ sidebar_position: 8
 | `/mcp` | 管理 MCP 服务器连接和 OAuth 身份验证 |
 | `/memory` | 编辑 CLAUDE.md 内存文件 |
 | `/model` | 选择或更改 AI 模型 |
-| `/permissions` | 查看或更新[权限](/en/docs/claude-code/iam#configuring-permissions) |
+| `/permissions` | 查看或更新权限 |
 | `/pr_comments` | 查看拉取请求评论 |
 | `/review` | 请求代码审查 |
 | `/status` | 查看帐户和系统状态 |
@@ -33,7 +33,7 @@ sidebar_position: 8
 
 ## 自定义斜杠命令
 
-自定义斜杠命令允许您将常用提示定义为 Claude Code 可以执行的 Markdown 文件。命令按范围（项目特定或个人）组织，并支持通过目录结构进行命名空间。
+自定义���杠命令允许您将常用提示定义为 Claude Code 可以执行的 Markdown 文件。命令按范围（项目特定或个人）组织，并支持通过目录结构进行命名空间。
 
 ### 语法
 
@@ -83,7 +83,7 @@ echo "审查此代码的安全漏洞：" > ~/.claude/commands/security-review.md
 
 ### 特性
 
-#### 命名空间
+#### 命���空间
 
 在子目录中组织命令以创建命名空间命令。
 
@@ -131,7 +131,7 @@ description: 创建一个 git 提交
 
 #### 文件引用
 
-使用 `@` 前缀在命令中包含文件内容以[引用文件](/en/docs/claude-code/common-workflows#reference-files-and-directories)。
+使用 `@` 前缀在命令中包含文件内容以引用文件。
 
 例如：
 
@@ -145,7 +145,7 @@ description: 创建一个 git 提交
 
 #### 思考模式
 
-斜杠命令可以通过包含[扩展思考关键字](/en/docs/claude-code/common-workflows#use-extended-thinking)来触发扩展思考。
+斜杠命令可以通过包含扩展思考关键字来触发扩展思考。
 
 ### 文件格式
 
@@ -211,7 +211,7 @@ MCP 提示可以接受服务器定义的参数：
 
 ## 另请参阅
 
-*   [交互模式](/en/docs/claude-code/interactive-mode) - 快捷方式、输入模式和交互功能
-*   [CLI 参考](/en/docs/claude-code/cli-reference) - 命令行标志和选项
-*   [设置](/en/docs/claude-code/settings) - 配置选项
-*   [内存管理](/en/docs/claude-code/memory) - 在会话之间管理 Claude 的内存
+*   交互模式 - 快捷方式、输入模式和交互功能
+*   CLI 参考 - 命令行标志和选项
+*   设置 - 配置选项
+*   内存管理 - 在会话之间管理 Claude 的内存

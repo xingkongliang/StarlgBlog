@@ -31,8 +31,8 @@ sidebar_label: 交互模式
 
 | 快捷键 | 描述 | 注意 |
 | :----------- | :--------------------------------- | :-------------------------------------------------------- |
-| `#` 开头 | 记忆快捷方式 - 添加到 CLAUDE.md | 提示文件��择 |
-| `/` 开头 | 斜杠命令 | 参见 [斜杠命令](/en/docs/claude-code/slash-commands) |
+| `#` 开头 | 记忆快捷方式 - 添加到 CLAUDE.md | 提示文件选择 |
+| `/` 开头 | 斜杠命令 | 参见 [斜杠命令](./slash-commands.md) |
 
 ## Vim 模式
 
@@ -93,7 +93,9 @@ Claude Code 维护当前会话的命令历史：
 
 ## 另请参阅
 
-* [斜杠命令](/en/docs/claude-code/slash-commands) - 交互式会话命令
-* [CLI 参考](/en/docs/claude-code/cli-reference) - 命令行标志和选项
-* [设置](/en/docs/claude-code/settings) - 配置选项
-* [内存管理](/en/docs/claude-code/memory) - 管理 CLAUDE.md 文件
+* [斜杠命令](./slash-commands.md) - 交互式会话命令
+* [CLI 参考](./cli-reference.md) - 命令行标志和选项
+* [设置](./settings.md) - 配置选项
+* [内存管理](./manage-claude-memory.md) - 管理 CLAUDE.md 文件
+
+```
