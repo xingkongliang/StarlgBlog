@@ -9,7 +9,7 @@ import rehypeKatex from 'rehype-katex';
 const config: Config = {
   title: 'Tianliang\'s Blog',
   tagline: 'Sharing thoughts on technology, programming, and life.',
-  favicon: 'img/octopus.png',
+  favicon: 'img/avatar.png',
 
   // Set the production url of your site here
   url: 'https://starlg.cn',
@@ -81,7 +81,7 @@ const config: Config = {
       title: 'Tianliang\'s Blog',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/octopus.png',
+        src: 'img/avatar.png',
       },
       items: [
         {
